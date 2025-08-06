@@ -32,8 +32,8 @@
             txtNumero1 = new TextBox();
             label2 = new Label();
             txtNumero2 = new TextBox();
-            somar = new Button();
-            button1 = new Button();
+            btnSubitrair = new Button();
+            btnSomar = new Button();
             button2 = new Button();
             button3 = new Button();
             lblResultado = new Label();
@@ -73,24 +73,25 @@
             txtNumero2.Size = new Size(100, 23);
             txtNumero2.TabIndex = 3;
             // 
-            // somar
+            // btnSubitrair
             // 
-            somar.Location = new Point(120, 104);
-            somar.Name = "somar";
-            somar.Size = new Size(75, 23);
-            somar.TabIndex = 4;
-            somar.Text = "subitrair";
-            somar.UseVisualStyleBackColor = true;
+            btnSubitrair.Location = new Point(120, 104);
+            btnSubitrair.Name = "btnSubitrair";
+            btnSubitrair.Size = new Size(75, 23);
+            btnSubitrair.TabIndex = 4;
+            btnSubitrair.Text = "subitrair";
+            btnSubitrair.UseVisualStyleBackColor = true;
+            btnSubitrair.Click += somar_Click;
             // 
-            // button1
+            // btnSomar
             // 
-            button1.Location = new Point(8, 104);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 5;
-            button1.Text = "somar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnSomar.Location = new Point(8, 104);
+            btnSomar.Name = "btnSomar";
+            btnSomar.Size = new Size(75, 23);
+            btnSomar.TabIndex = 5;
+            btnSomar.Text = "somar";
+            btnSomar.UseVisualStyleBackColor = true;
+            btnSomar.Click += button1_Click;
             // 
             // button2
             // 
@@ -100,6 +101,7 @@
             button2.TabIndex = 6;
             button2.Text = "multiplicar";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -109,6 +111,7 @@
             button3.TabIndex = 7;
             button3.Text = "dividir";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // lblResultado
             // 
@@ -128,8 +131,8 @@
             Controls.Add(lblResultado);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(somar);
+            Controls.Add(btnSomar);
+            Controls.Add(btnSubitrair);
             Controls.Add(txtNumero2);
             Controls.Add(label2);
             Controls.Add(txtNumero1);
@@ -146,8 +149,8 @@
         private TextBox txtNumero1;
         private Label label2;
         private TextBox txtNumero2;
-        private Button somar;
-        private Button button1;
+        private Button btnSubitrair;
+        private Button btnSomar;
         private Button button2;
         private Button button3;
         private Label lblResultado;

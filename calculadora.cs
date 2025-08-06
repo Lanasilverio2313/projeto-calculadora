@@ -26,5 +26,35 @@ namespace caculadora
             //Realizar a soma dos numeros e exibe o resultado
             lblResultado.Text = (numero1 + numero2).ToString();
         }
+
+        private void somar_Click(object sender, EventArgs e)
+        {
+            double numero1 = Convert.ToDouble(txtNumero1.Text);
+            double numero2 = Convert.ToDouble(txtNumero2.Text);
+
+            lblResultado.Text = (numero1 - numero2).ToString();
+
+
+
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            double numero1 = Convert.ToDouble(txtNumero1.Text);
+            double numero2 = Convert.ToDouble(txtNumero2.Text);
+
+            lblResultado.Text = (numero1 * numero2).ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            double numero1 = Convert.ToDouble(txtNumero1.Text);
+            double numero2 = Convert.ToDouble(txtNumero2.Text);
+
+            lblResultado.Text = (numero1  / numero2).ToString();
+        }
     }
 }
