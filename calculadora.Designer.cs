@@ -47,6 +47,7 @@
             label1.Size = new Size(58, 15);
             label1.TabIndex = 0;
             label1.Text = "numero 1";
+            label1.Click += label1_Click;
             // 
             // txtNumero1
             // 
@@ -72,6 +73,7 @@
             txtNumero2.Name = "txtNumero2";
             txtNumero2.Size = new Size(100, 23);
             txtNumero2.TabIndex = 3;
+            txtNumero2.TextChanged += txtNumero2_TextChanged;
             // 
             // btnSubitrair
             // 
